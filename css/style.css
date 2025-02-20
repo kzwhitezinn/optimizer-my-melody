@@ -181,3 +181,38 @@ h1 {
     box-shadow: 0 0 5px #fb81ff, 0 0 20px #ff90f0, 0 0 50px #f4a0ff, 0 0 100px #fa79ef;
 }
 
+#discord-button {
+  position: fixed;
+  bottom: 20px; /* Espaço da parte inferior */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(145deg, #ec77fc, #fb80ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre ícone e texto */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#discord-button:hover {
+  transform: translateX(-50%) scale(1.1); /* Aumenta levemente no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#discord-button svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+#discord-button:hover svg {
+  transform: rotate(10deg); /* Gira levemente o ícone no hover */
+}
